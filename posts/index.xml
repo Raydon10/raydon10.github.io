@@ -11,5 +11,21 @@
   <guid>http://example.org/first/</guid>
   <description><![CDATA[]]></description>
 </item>
+<item>
+  <title></title>
+  <link>http://example.org/pg3i82/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>xxxx</author>
+  <guid>http://example.org/pg3i82/</guid>
+  <description><![CDATA[tags: [教程, Hexo] categories: 写作 写在前面 **这篇教程能实现什么？**语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新]]></description>
+</item>
+<item>
+  <title></title>
+  <link>http://example.org/qgwhdl/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>xxxx</author>
+  <guid>http://example.org/qgwhdl/</guid>
+  <description><![CDATA[tags: [测试 ] categories: 写作 这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 H1标题 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接地址 行内代码 状态]]></description>
+</item>
 </channel>
 </rss>
