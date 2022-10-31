@@ -1,4 +1,4 @@
-# 
+# 小白搭建Hexo博客(语雀端写作)详细教程
 
 tags: [教程, Hexo]<br />categories: 写作
 
@@ -337,6 +337,6 @@ busuanzi:
 
 ---
 
-> 作者: xxxx  
+> 作者: Raydon  
 > URL: http://example.org/pg3i82/  
 
