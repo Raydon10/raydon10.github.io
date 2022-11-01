@@ -1,34 +1,134 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>我的全新 Hugo FixIt 网站</title>
-    <link>http://example.org/</link>
-    <description>这是我的全新 Hugo FixIt 网站</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>raydon.w@qq.com (Raydon)</managingEditor>
-      <webMaster>raydon.w@qq.com (Raydon)</webMaster><lastBuildDate>Mon, 31 Oct 2022 11:43:42 &#43;0000</lastBuildDate>
-      <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <title>首页 on 他山之石</title>
+    <link>https://adityatelange.github.io/hugo-PaperMod/</link>
+    <description>Recent content in 首页 on 他山之石</description>
+    <image>
+      <url>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</url>
+      <link>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://adityatelange.github.io/hugo-PaperMod/index.xml" rel="self" type="application/rss+xml" />
     <item>
-  <title>测试语雀内容→Hexo的文章（请忽略）</title>
-  <link>http://example.org/qgwhdl/</link>
-  <pubDate>Mon, 31 Oct 2022 11:43:42 &#43;0000</pubDate>
-  <author>Raydon</author>
-  <guid>http://example.org/qgwhdl/</guid>
-  <description><![CDATA[tags: [测试 ] categories: 写作 这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 测试11 H1标题 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接地址 行内]]></description>
-</item>
-<item>
-  <title>First</title>
-  <link>http://example.org/first/</link>
-  <pubDate>Mon, 31 Oct 2022 13:57:14 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://example.org/first/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>小白搭建Hexo博客(语雀端写作)详细教程</title>
-  <link>http://example.org/pg3i82/</link>
-  <pubDate>Sat, 29 Oct 2022 15:45:49 &#43;0000</pubDate>
-  <author>Raydon</author>
-  <guid>http://example.org/pg3i82/</guid>
-  <description><![CDATA[tags: [教程, Hexo] categories: 写作 写在前面 **这篇教程能实现什么？**语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新]]></description>
-</item>
-</channel>
+      <title>Installation | Update</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/product/papermod-installation/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/product/papermod-installation/</guid>
+      <description>Read Install and Update instructions here</description>
+    </item>
+    
+    <item>
+      <title>Features</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/product/papermod-features/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/product/papermod-features/</guid>
+      <description>Learn About All Features in PaperMod</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide For L2</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/life/markdown-syntax.fr/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/life/markdown-syntax.fr/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide For RTL</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/life/markdown-syntax.fa/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/life/markdown-syntax.fa/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    
+    <item>
+      <title>小白搭建Hexo博客(语雀端写作)详细教程</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/blog/pg3i82/</link>
+      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/blog/pg3i82/</guid>
+      <description>写在前面 **这篇教程能实现什么？**语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站博客自动更新/部署，即语雀端文章更新/发布，博客网站端自动同步。查看我的博客
+**为什么选择Hexo博客生成器？**开发者为台湾同胞，文档等中文支持较好；社区、主题资源较为完善。
+**为什么选择语雀作为编辑端？**语雀在国产在线文档产品中编辑体验较好，支持Markdown。
+**本教程适用人群？**小白、非程序员等人士，专业和资深人员请选择性阅读。
+搭建Hexo 安装Node.js/Git 如果你的电脑中已经安装Node.js &amp;amp; Git，可直接跳到下节安装Hexo
+安装Node.js Node.js 为大多数平台提供了官方的 安装程序，可下载安装包进行安装，或者：
+Windows：通过 nvs（推荐）或者 nvm 安装。 Mac：终端使用 Homebrew 安装。 1 brew install node 安装Git Windows：下载并安装 git. Mac：终端使用 Homebrew 或者下载 安装程序。 1 brew install git 安装Hexo 终端执行安装命令：
+1 npm install -g hexo-cli 安装以后，可以使用以下两种方式（推荐2）执行 Hexo：
+npx hexo &amp;lt;command&amp;gt; 将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用 hexo &amp;lt;command&amp;gt;，环境变量文件追加内容： 1 echo &amp;#39;PATH=&amp;#34;$PATH:./node_modules/.bin&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.profile Windows环境变量配置参考案例 Mac环境变量配置参考案例 使用Hexo建站 终端依次输入以下命令，为要创建的Hexo站点项目文件夹名称：</description>
+    </item>
+    
+    <item>
+      <title>测试语雀内容→Hexo的文章（请忽略）</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/qgwhdl/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/qgwhdl/</guid>
+      <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。
+测试11
+H1标题 H2标题 文章正文
+事项1 事项2 无序列表 有序列表 链接地址
+行内代码
+状态
+折叠内容要被折叠的内容
+1 2 t = hello world! print (t) :::info 测试 :::
+引用的内容
+😄</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/life/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/life/markdown-syntax/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/av/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/av/rich-content/</guid>
+      <description>A brief description of Hugo Shortcodes</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/av/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/av/placeholder-text/</guid>
+      <description>Lorem Ipsum Dolor Si Amet</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/blog/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/blog/math-typesetting/</guid>
+      <description>A brief guide to setup KaTeX</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/posts/life/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/life/emoji-support/</guid>
+      <description>Guide to emoji usage in Hugo</description>
+    </item>
+    
+    
+    
+    
+    
+  </channel>
 </rss>
