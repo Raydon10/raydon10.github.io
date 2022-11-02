@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>blog on 他山之石</title>
-    <link>https://tszs.info/categories/blog/</link>
+    <link>/categories/blog/</link>
     <description>Recent content in blog on 他山之石</description>
     <image>
-      <url>https://tszs.info/papermod-cover.png</url>
-      <link>https://tszs.info/papermod-cover.png</link>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>小白搭建Hexo博客(语雀端写作)详细教程</title>
-      <link>https://tszs.info/posts/blog/pg3i82/</link>
+      <link>/posts/blog/pg3i82/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/posts/blog/pg3i82/</guid>
+      <guid>/posts/blog/pg3i82/</guid>
       <description>写在前面 **这篇教程能实现什么？**语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站博客自动更新/部署，即语雀端文章更新/发布，博客网站端自动同步。查看我的博客
 **为什么选择Hexo博客生成器？**开发者为台湾同胞，文档等中文支持较好；社区、主题资源较为完善。
 **为什么选择语雀作为编辑端？**语雀在国产在线文档产品中编辑体验较好，支持Markdown。

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>shortcodes on 他山之石</title>
-    <link>https://tszs.info/tags/shortcodes/</link>
+    <link>/tags/shortcodes/</link>
     <description>Recent content in shortcodes on 他山之石</description>
     <image>
-      <url>https://tszs.info/papermod-cover.png</url>
-      <link>https://tszs.info/papermod-cover.png</link>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rich Content</title>
-      <link>https://tszs.info/posts/av/rich-content/</link>
+      <link>/posts/av/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/posts/av/rich-content/</guid>
+      <guid>/posts/av/rich-content/</guid>
       <description>A brief description of Hugo Shortcodes</description>
     </item>
     
