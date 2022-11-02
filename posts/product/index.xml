@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>产品分享 on 他山之石</title>
+    <title>产品分享 💡 on 他山之石</title>
     <link>https://tszs.info/posts/product/</link>
-    <description>Recent content in 产品分享 on 他山之石</description>
+    <description>Recent content in 产品分享 💡 on 他山之石</description>
     <image>
       <url>https://tszs.info/papermod-cover.png</url>
       <link>https://tszs.info/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/posts/product/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installation | Update</title>
-      <link>https://tszs.info/posts/product/papermod-installation/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/product/papermod-installation/</guid>
-      <description>Read Install and Update instructions here</description>
-    </item>
-    
-    <item>
-      <title>Features</title>
-      <link>https://tszs.info/posts/product/papermod-features/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/product/papermod-features/</guid>
-      <description>Learn About All Features in PaperMod</description>
-    </item>
-    
   </channel>
 </rss>

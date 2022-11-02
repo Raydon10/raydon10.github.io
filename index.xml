@@ -11,42 +11,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation | Update</title>
-      <link>https://tszs.info/posts/product/papermod-installation/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/product/papermod-installation/</guid>
-      <description>Read Install and Update instructions here</description>
-    </item>
-    
-    <item>
-      <title>Features</title>
-      <link>https://tszs.info/posts/product/papermod-features/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/product/papermod-features/</guid>
-      <description>Learn About All Features in PaperMod</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide For L2</title>
-      <link>https://tszs.info/posts/life/markdown-syntax.fr/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/life/markdown-syntax.fr/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide For RTL</title>
-      <link>https://tszs.info/posts/life/markdown-syntax.fa/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/life/markdown-syntax.fa/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    
-    <item>
       <title>小白搭建Hexo博客(语雀端写作)详细教程</title>
       <link>https://tszs.info/posts/blog/pg3i82/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
@@ -57,56 +21,11 @@
     
     <item>
       <title>测试语雀内容→Hexo的文章（请忽略）</title>
-      <link>https://tszs.info/posts/qgwhdl/</link>
+      <link>https://tszs.info/posts/blog/qgwhdl/</link>
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/posts/qgwhdl/</guid>
+      <guid>https://tszs.info/posts/blog/qgwhdl/</guid>
       <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 测试11 H1标题 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接地址 行内代码 状态 折叠内容</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://tszs.info/posts/life/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/life/markdown-syntax/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://tszs.info/posts/av/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/av/rich-content/</guid>
-      <description>A brief description of Hugo Shortcodes</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://tszs.info/posts/av/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/av/placeholder-text/</guid>
-      <description>Lorem Ipsum Dolor Si Amet</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://tszs.info/posts/blog/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/blog/math-typesetting/</guid>
-      <description>A brief guide to setup KaTeX</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://tszs.info/posts/life/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/life/emoji-support/</guid>
-      <description>Guide to emoji usage in Hugo</description>
     </item>
     
     

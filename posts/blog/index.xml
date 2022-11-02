@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>博客搭建 on 他山之石</title>
+    <title>博客搭建 📚 on 他山之石</title>
     <link>https://tszs.info/posts/blog/</link>
-    <description>Recent content in 博客搭建 on 他山之石</description>
+    <description>Recent content in 博客搭建 📚 on 他山之石</description>
     <image>
       <url>https://tszs.info/papermod-cover.png</url>
       <link>https://tszs.info/papermod-cover.png</link>
@@ -20,12 +20,12 @@
     </item>
     
     <item>
-      <title>Math Typesetting</title>
-      <link>https://tszs.info/posts/blog/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <title>测试语雀内容→Hexo的文章（请忽略）</title>
+      <link>https://tszs.info/posts/blog/qgwhdl/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/posts/blog/math-typesetting/</guid>
-      <description>A brief guide to setup KaTeX</description>
+      <guid>https://tszs.info/posts/blog/qgwhdl/</guid>
+      <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 测试11 H1标题 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接地址 行内代码 状态 折叠内容</description>
     </item>
     
   </channel>
