@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>标签 on 他山之石</title>
-    <link>https://tszs.info/tags.html</link>
+    <link>/tags.html</link>
     <description>Recent content in 标签 on 他山之石</description>
     <image>
-      <url>https://tszs.info/papermod-cover.png</url>
-      <link>https://tszs.info/papermod-cover.png</link>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试</title>
-      <link>https://tszs.info/tags/%E6%B5%8B%E8%AF%95.html</link>
+      <link>/tags/%E6%B5%8B%E8%AF%95.html</link>
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/%E6%B5%8B%E8%AF%95.html</guid>
+      <guid>/tags/%E6%B5%8B%E8%AF%95.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>PaperMod</title>
-      <link>https://tszs.info/tags/papermod.html</link>
+      <link>/tags/papermod.html</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/papermod.html</guid>
+      <guid>/tags/papermod.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://tszs.info/tags/css.html</link>
+      <link>/tags/css.html</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/css.html</guid>
+      <guid>/tags/css.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://tszs.info/tags/html.html</link>
+      <link>/tags/html.html</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/html.html</guid>
+      <guid>/tags/html.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://tszs.info/tags/markdown.html</link>
+      <link>/tags/markdown.html</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/markdown.html</guid>
+      <guid>/tags/markdown.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://tszs.info/tags/themes.html</link>
+      <link>/tags/themes.html</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/themes.html</guid>
+      <guid>/tags/themes.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://tszs.info/tags/privacy.html</link>
+      <link>/tags/privacy.html</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/privacy.html</guid>
+      <guid>/tags/privacy.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://tszs.info/tags/shortcodes.html</link>
+      <link>/tags/shortcodes.html</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/shortcodes.html</guid>
+      <guid>/tags/shortcodes.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://tszs.info/tags/text.html</link>
+      <link>/tags/text.html</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/text.html</guid>
+      <guid>/tags/text.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://tszs.info/tags/emoji.html</link>
+      <link>/tags/emoji.html</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/tags/emoji.html</guid>
+      <guid>/tags/emoji.html</guid>
       <description></description>
     </item>
     
