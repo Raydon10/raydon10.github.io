@@ -126,45 +126,6 @@ H1标题 H2标题 文章正文
       <description>Guide to emoji usage in Hugo</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://tszs.info/posts/blogpg3i82/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/blogpg3i82/</guid>
-      <description>tags: [教程, Hexo]
-categories: blog
-写在前面 **这篇教程能实现什么？**语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站博客自动更新/部署，即语雀端文章更新/发布，博客网站端自动同步。查看我的博客
-**为什么选择Hexo博客生成器？**开发者为台湾同胞，文档等中文支持较好；社区、主题资源较为完善。
-**为什么选择语雀作为编辑端？**语雀在国产在线文档产品中编辑体验较好，支持Markdown。
-**本教程适用人群？**小白、非程序员等人士，专业和资深人员请选择性阅读。
-搭建Hexo 安装Node.js/Git 如果你的电脑中已经安装Node.js &amp;amp; Git，可直接跳到下节安装Hexo
-安装Node.js Node.js 为大多数平台提供了官方的 安装程序，可下载安装包进行安装，或者：
-Windows：通过 nvs（推荐）或者 nvm 安装。 Mac：终端使用 Homebrew 安装。 1 brew install node 安装Git Windows：下载并安装 git. Mac：终端使用 Homebrew 或者下载 安装程序。 1 brew install git 安装Hexo 终端执行安装命令：
-1 npm install -g hexo-cli 安装以后，可以使用以下两种方式（推荐2）执行 Hexo：
-npx hexo &amp;lt;command&amp;gt; 将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用 hexo &amp;lt;command&amp;gt;，环境变量文件追加内容： 1 echo &amp;#39;PATH=&amp;#34;$PATH:.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://tszs.info/posts/blogqgwhdl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/posts/blogqgwhdl/</guid>
-      <description>tags: [测试 ]
-categories:
-这篇文章用于测试语雀同步到博客内容是否正常，请忽略。
-测试11
-H1标题 H2标题 文章正文
-事项1 事项2 无序列表 有序列表 链接地址
-行内代码
-状态
-折叠内容要被折叠的内容
-1 2 t = hello world! print (t) :::info 测试 :::
-引用的内容
-😄</description>
-    </item>
-    
     
     
     
