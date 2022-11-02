@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>PaperMod on 他山之石</title>
-    <link>/series/papermod/</link>
+    <link>https://tszs.info/series/papermod/</link>
     <description>Recent content in PaperMod on 他山之石</description>
     <image>
-      <url>papermod-cover.png</url>
-      <link>papermod-cover.png</link>
+      <url>https://tszs.info/papermod-cover.png</url>
+      <link>https://tszs.info/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/series/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation | Update</title>
-      <link>/posts/product/papermod-installation/</link>
+      <link>https://tszs.info/posts/product/papermod-installation/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/product/papermod-installation/</guid>
+      <guid>https://tszs.info/posts/product/papermod-installation/</guid>
       <description>Read Install and Update instructions here</description>
     </item>
     
