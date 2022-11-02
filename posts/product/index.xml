@@ -10,23 +10,5 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/product/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installation | Update</title>
-      <link>/posts/product/papermod-installation/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/product/papermod-installation/</guid>
-      <description>Read Install and Update instructions here</description>
-    </item>
-    
-    <item>
-      <title>Features</title>
-      <link>/posts/product/papermod-features/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/product/papermod-features/</guid>
-      <description>Learn About All Features in PaperMod</description>
-    </item>
-    
   </channel>
 </rss>
