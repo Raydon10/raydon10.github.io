@@ -23,10 +23,10 @@
     <loc>https://tszs.info/posts/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/</loc>
+    <loc>https://tszs.info/posts/blog/pg3i82/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/blog/pg3i82/</loc>
+    <loc>https://tszs.info/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tszs.info/tags/</loc>
@@ -111,8 +111,8 @@
   </url><url>
     <loc>https://tszs.info/search.fr/</loc>
   </url><url>
-    <loc>https://tszs.info/archives/</loc>
-  </url><url>
     <loc>https://tszs.info/search/</loc>
+  </url><url>
+    <loc>https://tszs.info/archives/</loc>
   </url>
 </urlset>
