@@ -16,7 +16,7 @@
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://tszs.info/posts/blog/pg3i82/</guid>
-      <description>写在前面 **这篇教程能实现什么？**语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 →</description>
+      <description>写在前面 **这篇教程能实现什么？ **语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 →</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://tszs.info/posts/blog/qgwhdl/</guid>
-      <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 测试11 H1标题 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接地址 行内代码 状态 折叠内容</description>
+      <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 测试内容 H1标题 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接地址 行内代码 状态 折叠内容</description>
     </item>
     
   </channel>
