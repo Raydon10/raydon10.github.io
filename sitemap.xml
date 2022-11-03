@@ -17,6 +17,12 @@
     <loc>https://tszs.info/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://tszs.info/tags/</loc>
+    <lastmod>2022-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tszs.info/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2022-10-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tszs.info/posts/blog/qgwhdl/</loc>
     <lastmod>2022-10-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -41,7 +47,5 @@
     <loc>https://tszs.info/search/</loc>
   </url><url>
     <loc>https://tszs.info/archives/</loc>
-  </url><url>
-    <loc>https://tszs.info/tags/</loc>
   </url>
 </urlset>
