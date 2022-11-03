@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>blog on 他山之石</title>
+    <title>博客搭建 📚 on 他山之石</title>
     <link>https://tszs.info/categories/blog/</link>
-    <description>Recent content in blog on 他山之石</description>
+    <description>Recent content in 博客搭建 📚 on 他山之石</description>
     <image>
       <url>https://tszs.info/papermod-cover.png</url>
       <link>https://tszs.info/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://tszs.info/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>小白搭建Hexo博客(语雀端写作)详细教程</title>
-      <link>https://tszs.info/posts/blog/pg3i82/</link>
+      <link>https://tszs.info/categories/blog/pg3i82/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/posts/blog/pg3i82/</guid>
+      <guid>https://tszs.info/categories/blog/pg3i82/</guid>
       <description>写在前面 这篇教程能实现什么？ 语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站</description>
     </item>
     
     <item>
       <title>测试语雀内容→Hexo的文章（请忽略）</title>
-      <link>https://tszs.info/posts/blog/qgwhdl/</link>
+      <link>https://tszs.info/categories/blog/qgwhdl/</link>
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://tszs.info/posts/blog/qgwhdl/</guid>
+      <guid>https://tszs.info/categories/blog/qgwhdl/</guid>
       <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 以下是测试罗列的内容： 测试换行 H1标题1 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接</description>
     </item>
     

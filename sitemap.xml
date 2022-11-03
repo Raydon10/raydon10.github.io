@@ -2,16 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tszs.info/categories/blog/</loc>
-    <lastmod>2022-10-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tszs.info/categories/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/</loc>
-    <lastmod>2022-10-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tszs.info/posts/blog/pg3i82/</loc>
+    <loc>https://tszs.info/categories/blog/pg3i82/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tszs.info/</loc>
@@ -23,26 +17,41 @@
     <loc>https://tszs.info/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/blog/qgwhdl/</loc>
+    <loc>https://tszs.info/categories/blog/qgwhdl/</loc>
     <lastmod>2022-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/product/</loc>
+    <loc>https://tszs.info/categories/product/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/life/</loc>
+    <loc>https://tszs.info/categories/life/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/blog/</loc>
+    <loc>https://tszs.info/categories/blog/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/posts/av/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://tszs.info/tags/css/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/archives.fr/</loc>
+    <loc>https://tszs.info/tags/html/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/search.fr/</loc>
+    <loc>https://tszs.info/tags/markdown/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tszs.info/template/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tszs.info/series/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tszs.info/tags/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tszs.info/series/themes-guide/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tszs.info/categories/av/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tszs.info/search/</loc>
   </url><url>
