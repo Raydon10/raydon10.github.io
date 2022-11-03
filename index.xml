@@ -28,15 +28,6 @@
       <description>这篇文章用于测试语雀同步到博客内容是否正常，请忽略。 以下是测试罗列的内容： 测试换行 H1标题1 H2标题 文章正文 事项1 事项2 无序列表 有序列表 链接</description>
     </item>
     
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://tszs.info/template/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://tszs.info/template/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    
     
     
   </channel>
