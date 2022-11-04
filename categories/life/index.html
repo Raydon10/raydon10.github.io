@@ -14,7 +14,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a6165cb806ebc00ec05b1b9fe355fb6c7282f59db225ef1bb41cb322bfb47d37.css" integrity="sha256-phZcuAbrwA7AWxuf41X7bHKC9Z2yJe8btByzIr&#43;0fTc=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0a86275ecac3adf9497a221223c532b403205005a26c79118228b2a6ac9bac7a.css" integrity="sha256-CoYnXsrDrflJeiISI8UytAMgUAWibHkRgiiypqybrHo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tszs.info/images/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tszs.info/images/favicon/favicon-32x32.png">
@@ -190,10 +190,16 @@
         
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" class="top-link" id="top-link" accesskey="g">
+    
+    <span class="top-inner">
+        <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+        
+            <div><span id="read_progress"></span>%</div>
+        </span>
+    </span>
 </a>
 
 <script>
@@ -236,6 +242,15 @@
             mybutton.style.opacity = "0";
         }
     };
+    
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
 
 </script>
 <script>
