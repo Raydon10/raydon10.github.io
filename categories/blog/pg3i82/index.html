@@ -71,8 +71,8 @@
 <meta property="og:description" content="写在前面 这篇教程能实现什么？ 语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tszs.info/categories/blog/pg3i82/" /><meta property="og:image" content="https://tszs.info/papermod-cover.png"/><meta property="article:section" content="categories" />
-<meta property="article:published_time" content="2022-10-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-10-24T00:00:00+00:00" />
+<meta property="article:published_time" content="2022-10-24T11:54:36+00:00" />
+<meta property="article:modified_time" content="2022-11-03T07:09:30+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://tszs.info/papermod-cover.png"/>
@@ -120,8 +120,8 @@
   "articleBody": "\n写在前面 这篇教程能实现什么？ 语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站博客自动更新/部署，即语雀端文章更新/发布，博客网站端自动同步。查看我的博客 **为什么选择Hexo博客生成器？ ** 开发者为台湾同胞，文档等中文支持较好；社区、主题资源较为完善。 **为什么选择语雀作为编辑端？ ** 语雀在国产在线文档产品中编辑体验较好，支持Markdown。 **本教程适用人群？ ** 小白、非程序员等人士，专业和资深人员请选择性阅读。 \n搭建Hexo \n安装Node.js/Git 如果你的电脑中已经安装Node.js \u0026 Git，可直接跳到下节安装Hexo \n安装Node.js Node.js 为大多数平台提供了官方的 安装程序，可下载安装包进行安装，或者：\n Windows：通过 nvs（推荐）或者 nvm 安装。 Mac：终端使用 Homebrew 安装。  1  brew install node   \n安装Git  Windows：下载并安装 git. Mac：终端使用 Homebrew 或者下载 安装程序。  1  brew install git   \n安装Hexo 终端执行安装命令：\n1  npm install -g hexo-cli   安装以后，可以使用以下两种方式（推荐2）执行 Hexo：\n npx hexo  将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用 hexo ，环境变量文件追加内容：  1  echo 'PATH=\"$PATH:./node_modules/.bin\"'  ~/.profile    Windows环境变量配置参考案例 Mac环境变量配置参考案例   使用Hexo建站 终端依次输入以下命令，为要创建的Hexo站点项目文件夹名称：\n1 2 3  hexo init  cd  npm install   创建完成后，指定文件夹的目录如下： ├── _config.yml ├── package.json ├── scaffolds ├── source ├ ├── _drafts ├ └── _posts └── themes\n_config.yml（根目录） 网站的配置信息文件，可配置除主题内嵌功能外大部分参数，如网站名称等，参考 Hexo文档｜配置\npackage.json 应用程序/依赖包信息文件\nthemes 主题文件夹，Hexo会根据主题来生成静态页面\n\n更换主题 Hexo自带了landscape主题： 如果不喜欢，可以参考官网案例更换其他主题，比如我选择的Cactus： 操作步骤（以Cactus主题为例）：\n 在项目根目录下执行：  1  git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus   最后的themes/cactus是指克隆cactus主题到themes文件下。这里有一个坑，在后面部署到GitHub pages时仓库里不能再有仓库，所以克隆完毕后最好删除cactus文件夹里的.git文件夹（已隐藏的文件夹）。\n在根目录下的 _config.yml 中设置主题：  1 2  # theme: landscape theme: cactus   一些主题相关的配置项因主题不同而不同，请查阅相关主题文档   Hexo命令 至此，你完成了最基础的一个Hexo博客搭建，可以在本地进行配置和调试，参考Hexo文档｜命令 比如执行：\n1  hexo g \u0026\u0026 hexo s   即可在本地浏览器地址 localhost:4000 检查是否搭建成功 \n语雀文章同步到Hexo \n安装yuque-hexo 项目根目录下命令行安装：\n1  npm i -g yuque-hexo   package.json文件添加以下内容，其中login，repo，token字段需自己配置：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  \"yuqueConfig\": { \"postPath\": \"source/_posts\", \"cachePath\": \"yuque.json\", \"mdNameFormat\": \"slug\", \"adapter\": \"hexo\", \"concurrency\": 5, \"baseUrl\": \"https://www.yuque.com/api/v2\", \"login\": \"raydon\", \"repo\": \"tszs\", \"token\": \"在语雀右上角头像-账户设置-Token新建，把全部的读取权限勾上即可\", \"onlyPublished\": true, \"onlyPublic\": true }, \"devDependencies\": { \"yuque-hexo\": \"^1.9.1\" }, \"hexo\": { \"version\": \"6.3.0\" },   其中的login和repo这样对应： 配置好后，在项目根目录下执行命令，即可拉取语雀对应知识库内容到本地路径/source/_posts：\n1  yuque-hexo sync   之后执行：\n1  hexo g \u0026\u0026 hexo s   即可在本地浏览器地址 localhost:4000 检查是否成功 \n语雀图片无法显示的解决 因为语雀图片的防盗链机制，图片会有无法显示的问题，请在 themes/cactus(主题路径)/layout/_partial/head.ejs 中加上一行代码：\n1  meta name=\"referrer\" content=\"no-referrer\" /   **注意：**此行代码可能会导致使用不蒜子等计数器失效，但目前经我测试还OK；另外其他教程有建议将图片上传到图床解决这个问题，但因一下原因，请按需选择：\n 免费图床不可靠 收费图床有配置和RMB成本，即使七牛云图床有免费额度，但仍存在Chrome无法加载http图片需要配置SSL证书等问题   通过github actions自动更新 \n准备工作  创建一个github公开仓库：用来托管最终生成的静态网站源码，必须以用户名.github.io命名，因为github pages 必须以这种格式才能在浏览器通过域名访问。我的公开仓库 [https://raydon10.github.io](https://raydon10.github.io) 创建一个github私有仓库：用来push托管本地代码，并通过github actions自动（一旦仓库发生变化）部署到上面的公开仓库中，这样以后语雀来源的文章更新就和本地代码没关系了。我的私有仓库 [https://github.com/raydon10/tszs](https://github.com/raydon10/tszs)。注意请删掉主题文件夹内的 .git文件夹，因为有 .git就相当于一个仓库，仓库里不能再放仓库，否则本地代码push不到github私有仓库   github配置 创建一个token（classic） 勾上这几个： 创建完的token要记下来，不然以后就看不到了 再进到刚才准备工作创建的私有仓库，创建两个sercet： GH_REF 内容是公开仓库/博客地址（不需要https://）：raydon10.github.io GH_TOKEN 是上面生成的token（这样做为了防止token在gitHub action代码中暴露） 在本地项目文件夹根目录创建目录文件：.github/workflows/main.yml ，也可以在github私有仓库的Actions选项中创建，但为了本地调试改代码方便，直接在本地文件创建workflows文件，可直接同步到github。 main.yml 填入以下代码：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45  name:Blog CI/CDon:[push, repository_dispatch]jobs:blog-cicd:name:Hexo blog build \u0026 deployruns-on:ubuntu-latestenv:TZ:Asia/Shanghaisteps:- name:Checkout codesuses:actions/checkout@v2- name:Setup nodeuses:actions/setup-node@v1with:node-version:'12.x'- name:Cache node modulesuses:actions/cache@v1with:path:~/.npmkey:${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}- name:Install dependenciesrun:|npm install hexo-cli -g npm install yuque-hexo -g npm install yuque-hexo sync - name:Generate filesrun:hexo generate- name:Deploy blogrun:|git clone \"https://${{ secrets.GH_REF }}\" deploy_git mv ./deploy_git/.git ./public cd ./public git config user.name \"填入自己的github用户名\" git config user.email \"填入自己的github邮箱\" git add . git commit -m \"GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')\" git push --force --quiet \"https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}\" main:main   通过上面的代码，当仓库发生变化或 repository_dispatch 时会自动触发更新部署到公开仓库（即博客网站） \nserverless云函数配置 进入 腾讯云控制台 搜索 云函数，点击新建： 代码内容填写：\n1 2 3 4 5 6 7 8 9 10 11 12 13  # -*- coding: utf8 -*- import requests def main_handler(event, context): r = requests.post(\"https://api.github.com/repos/raydon10/tszs/dispatches\", json = {\"event_type\": \"run-it\"}, headers = {\"User-Agent\":'curl/7.52.1', 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.everest-preview+json', 'Authorization': 'token 这里是上面创建的github_token'}) if r.status_code == 204: return \"This's OK!\" else: return r.status_code   注意用你自己的私有仓库替代上述代码中的仓库地址，‘Authorization’: ’token 的token不要删掉。 点击测试，看到“That’s OK!”就是成功了；同时在github私有仓库的Actions选项卡下可以看到对应动作，等待动作从黄色变成绿色则说明配置成功了，否则点进去详情看下具体原因具体解决～ 在刚才的函数服务下创建一个触发器（用于接受语雀更新的webhook）： 选择这个然后提交： 然后找到刚创建的触发器的访问路径： **注意：**腾讯云函数服务可能有一定费用（不高），使用过程需留意。 \n语雀webhook配置 在作为博客写作端的语雀知识库（没有则新建一个），点击设置： webhook地址填上面的触发器访问地址。\n至此，一个语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库的自动化过程就完成了！自己验证试试吧！ \n使用自己的域名 通过上面的一通操作，可以在自己的github pages页面查看自动化部署的Hexo个人博客网站，域名如 https:// raydon10.github.io，如果想使用自己的域名，可以参考以下内容： \n腾讯云Web应用托管 进入腾讯云控制台，搜索找到 Web应用托管 新建应用，选择从github仓库，导入我们之前创建的公开仓库（github pages），这样一旦仓库有更新，就会触发Web应用托管自动同步更新内容并构建和部署网站： **注意：**腾讯云Web应用托管服务有一定费用（但不高），使用中请留意。\n腾讯云域名中有.git片段会导致无法自动构建，经过我和腾讯云的沟通他们已经修复这个BUG： 至此我们能通过腾讯云分配给我们的域名进行访问，要使用自己的域名可以进行绑定（需要备案）： \n其他私有域名方案 请自行查阅～ \nHexo/Cactus主题的技巧和坑 \nHexo \n添加 .gitignore文件 将一些不需要的文件添加到本地项目根目录下的 .gitignore文件（新建/纯文本），如果按上面教程进行的博客搭建，可添加以下内容：\n1 2 3 4 5 6 7  .DS_Store .deploy_git/ public/ source/_posts/ lastGeneratePath.log db.json yuque.json   这样git push时会忽略这些文件或文件夹，.DS_Store只有Mac系统需添加，其余文件会在github actions执行时重新构建，无需push。 \n添加 lastGeneratePath.log 文件 在本地项目根目录添加 lastGeneratePath.log 文件，并在 package.json 的 “yuqueConfig” 中写入 \"lastGeneratePath\": \"lastGeneratePath.log\"，这样每次执行yuque-hexo sync同步语雀内容时，只会获取上次更新时间戳之后发生变化的内容。 \nCactus \n菜单在Chrome中消失的BUG 在Chromium内核的PC浏览器中，文章正文页如超出屏幕高度，拖动浏览页面菜单消失，回到顶部后不再出现，并且点击菜单按钮也不会出现。解决办法： 将 /themes/cactus/source/js/main.js 文件中\n1 2 3 4 5 6  /** * Add a scroll listener to the menu to hide/show the navigation links. */ if (menu.length) { $(window).on(\"scroll\", function() { var topDistance = menu.offset().top;   部分的var topDistance = menu.offset().top替换为var topDistance = window.pageYOffset即可解决。 \n增加不蒜子统计 效果如图： 在 /themes/cactus/layout/_partial/footer.ejs 文件末尾增加不蒜子代码：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  footer id=\"footer\" div class=\"footer-left\"  __('footer.copyright') % \u0026copy;  var endYear = (theme.copyright \u0026\u0026 theme.copyright.end_year) ? theme.copyright.end_year : new Date().getFullYear() %  var startYear = (theme.copyright \u0026\u0026 theme.copyright.start_year) ? theme.copyright.start_year : new Date().getFullYear() %  startYear = endYear ? endYear : startYear + \"-\" + endYear %  config.author || config.title % 转载请注明出处 /div div class=\"footer-right\" nav ul  for (var i in theme.nav) { % --lia href=\"\" __('nav.'+i).replace(\"nav.\", \"\") %/a -- } % /ul /nav /div div class=\"busuanzi\"  if (theme.busuanzi \u0026\u0026 theme.busuanzi.enable){ %  不蒜子统计 -- span id=\"busuanzi_container_site_pv\" 网站总访问量：span id=\"busuanzi_value_site_pv\"/span /span  span class=\"post-meta-divider\"|/span span id=\"busuanzi_container_site_uv\" style='display:none' 本站访客数span id=\"busuanzi_value_site_uv\"/span人 /span -- script async src=\"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js\"/script  } % /div /footer   同时在 /themes/cactus/source/css/_partial/footer.styl 文件增加 .busuanzi及以后内容：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  @media (min-width: 39rem) #footer display: flex flex-flow: row wrap justify-content: space-between align-items: center align-content: center margin-bottom: 20px .footer-left align-self: flex-start margin-right: 20px .footer-right align-self: flex-end .busuanzi display: inline-block width: 100% text-align: left   在 /themes/cactus/_config.yml 追加以下内容：\n1 2 3  # 是否开启访问量统计功能(不蒜子)busuanzi:enable:true  ",
   "wordCount" : "4176",
   "inLanguage": "zh",
-  "datePublished": "2022-10-24T00:00:00Z",
-  "dateModified": "2022-10-24T00:00:00Z",
+  "datePublished": "2022-10-24T11:54:36.574Z",
+  "dateModified": "2022-11-03T07:09:30Z",
   "author":{
     "@type": "Person",
     "name": "Raydon"
@@ -218,11 +218,25 @@
     <h1 class="post-title">
       小白搭建Hexo博客(语雀端写作)详细教程
     </h1>
-    <div class="post-meta"><span title='2022-10-24 00:00:00 +0000 UTC'>2022-10-24</span>&nbsp;·&nbsp;阅读约 9 分钟&nbsp;·&nbsp;Raydon
+    <div class="post-meta">
 
-·&nbsp;<span id='twikoo_visitors'>0</span>&nbsp;次浏览
-      
-    </div>
+<span title='2022-10-24 11:54:36.574 +0000 UTC'>2022-10-24</span>&nbsp;·&nbsp;<span id='twikoo_visitors'>null</span>&nbsp;次浏览&nbsp;·&nbsp;阅读约 9 分钟&nbsp;·&nbsp;Raydon
+<div>
+    
+    <script src="https://cdn.staticfile.org/twikoo/1.6.7/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: 'tszs-0gkcfwbt813f70d3', 
+            el: "#tcomment",
+            lang: 'zh-CN',
+            region: '', 
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        });
+    </script>
+</div>
+
+
+</div>
   </header> <aside id="toc-container" class="toc-container wide">
     <div class="toc">
         <details  open>
@@ -1017,6 +1031,7 @@ webhook地址填上面的触发器访问地址。</p>
   </div>
 
   <footer class="post-footer">
+    编辑于 2022-11-03 07:09
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
