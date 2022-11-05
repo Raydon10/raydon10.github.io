@@ -10,5 +10,41 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 24 Oct 2022 11:54:36 +0000</lastBuildDate><atom:link href="https://tszs.info/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>产品分享 💡</title>
+      <link>https://tszs.info/categories/product/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://tszs.info/categories/product/</guid>
+      <description>各类产品对比分析和推荐内容</description>
+    </item>
+    
+    <item>
+      <title>生活感悟 🏖</title>
+      <link>https://tszs.info/categories/life/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tszs.info/categories/life/</guid>
+      <description>Contains posts related to PaperMod</description>
+    </item>
+    
+    <item>
+      <title>博客搭建 📚</title>
+      <link>https://tszs.info/categories/blog/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tszs.info/categories/blog/</guid>
+      <description>博客搭建攻略和心得</description>
+    </item>
+    
+    <item>
+      <title>影音娱乐 🎧</title>
+      <link>https://tszs.info/categories/av/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tszs.info/categories/av/</guid>
+      <description>电影/音乐/书籍分享</description>
+    </item>
+    
   </channel>
 </rss>

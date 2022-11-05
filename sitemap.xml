@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tszs.info/</loc>
+    <lastmod>2022-11-03T07:45:40+00:00</lastmod>
+  </url><url>
     <loc>https://tszs.info/categories/</loc>
     <lastmod>2022-11-03T07:45:40+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/categories/blog/pg3i82/</loc>
-    <lastmod>2022-11-03T07:09:30+00:00</lastmod>
-  </url><url>
-    <loc>https://tszs.info/</loc>
+    <loc>https://tszs.info/p/</loc>
     <lastmod>2022-11-03T07:45:40+00:00</lastmod>
+  </url><url>
+    <loc>https://tszs.info/p/pg3i82/</loc>
+    <lastmod>2022-11-03T07:09:30+00:00</lastmod>
   </url><url>
     <loc>https://tszs.info/tags/</loc>
     <lastmod>2022-11-03T07:45:40+00:00</lastmod>
@@ -17,7 +20,7 @@
     <loc>https://tszs.info/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-11-03T07:45:40+00:00</lastmod>
   </url><url>
-    <loc>https://tszs.info/categories/blog/qgwhdl/</loc>
+    <loc>https://tszs.info/p/qgwhdl/</loc>
     <lastmod>2022-11-03T07:45:40+00:00</lastmod>
   </url><url>
     <loc>https://tszs.info/categories/product/</loc>
@@ -31,8 +34,6 @@
   </url><url>
     <loc>https://tszs.info/categories/av/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tszs.info/series/</loc>
   </url><url>
     <loc>https://tszs.info/search/</loc>
   </url><url>
