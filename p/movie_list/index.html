@@ -226,7 +226,7 @@
         
 </figure><aside id="toc-container" class="toc-container wide">
     <div class="toc">
-        <details  open>
+        <details>
             <summary accesskey="c" title="(Alt + C)">
                 &nbsp;<span class="details">文章目录</span>
             </summary>
@@ -250,6 +250,22 @@
         </details>
     </div>
 </aside>
+
+ 
+<script>
+window.onload = function checkTocOpenOnLoad() {
+    const width = document.body.scrollWidth;
+
+    if (width - main - (toc * 2) - (gap * 4) > 0) {
+        
+        document.querySelector("details").setAttribute("open", "");
+    } else {
+        
+        document.querySelector("details").removeAttribute("open");
+    }
+}
+</script>
+
 <script>
     let activeElement;
     let elements;
@@ -289,18 +305,13 @@
     const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
     const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
     const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
     function checkTocPosition() {
         const width = document.body.scrollWidth;
 
         if (width - main - (toc * 2) - (gap * 4) > 0) {
             document.getElementById("toc-container").classList.add("wide");
-            
-            document.querySelector("details").setAttribute("open", "");
         } else {
             document.getElementById("toc-container").classList.remove("wide");
-            
-            document.querySelector("details").removeAttribute("open");
         }
     }
 
