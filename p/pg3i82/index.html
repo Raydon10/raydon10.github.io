@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a460c66816c09db810a8a5a96e7b4ee63c5ef58616d86fa44e25d4d2d0754ac9.css" integrity="sha256-pGDGaBbAnbgQqKWpbntO5jxe9YYW2G&#43;kTiXU0tB1Ssk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c1f0380b33c46a90aaca2085db2ee37c8af67b4958be49b895966cdf8d17bb25.css" integrity="sha256-wfA4CzPEapCqyiCF2y7jfIr2e0lYvkm4lZZs340XuyU=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
@@ -67,7 +67,11 @@
   gtag('js', new Date());
 
   gtag('config', 'G-RMBH6WFDEL');
-</script><meta property="og:title" content="小白搭建Hexo博客(语雀端写作)详细教程" />
+</script>
+
+
+<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+<meta property="og:title" content="小白搭建Hexo博客(语雀端写作)详细教程" />
 <meta property="og:description" content="写在前面 这篇教程能实现什么？ 语雀文章更新 → webhook推送 → 触发器触发云函数 → 私有仓库actions拉取文章更新 → 部署到公开仓库 → 托管网站" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tszs.info/p/pg3i82/" /><meta property="og:image" content="https://tszs.info/home-info.png"/><meta property="article:section" content="p" />
@@ -350,8 +354,12 @@
 
         if (width - main - (toc * 2) - (gap * 4) > 0) {
             document.getElementById("toc-container").classList.add("wide");
+            
+            document.querySelector("details").setAttribute("open", "");
         } else {
             document.getElementById("toc-container").classList.remove("wide");
+            
+            document.querySelector("details").removeAttribute("open");
         }
     }
 
@@ -1034,7 +1042,7 @@ webhook地址填上面的触发器访问地址。</p>
 <div>
     <br>
     <div class="pagination__title">
-        <span class="pagination__title-h">评论区 ￬</span>
+        <span class="pagination__title-h"><i class="fa-regular fa-message"></i> 评论</span>
         <hr style="height: 1px; background-color: var(--secondary); border: none;" />
     </div>
     <div id="tcomment"></div>
