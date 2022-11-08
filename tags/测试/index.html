@@ -247,10 +247,10 @@
         
         const fotterHeight = scrollHeight - document.getElementById("page-footer").offsetTop;
         const innerNumber = ((scrollTop / (scrollHeight - clientHeight - fotterHeight)).toFixed(2) * 100).toFixed(0);
-        if (innerNumber <= 100) {
-            readProgress.innerText = innerNumber + '%'
+        if (innerNumber>=0 && innerNumber <= 100) {
+            readProgress.innerText = innerNumber + '%';
         } else {
-            readProgress.innerText = '回顶部'
+            readProgress.innerText = '回顶部';
         }
         
     })
