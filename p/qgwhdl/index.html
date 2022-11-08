@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b69d9b4c4803f63c9f420b0f2d54f9a4c434d45a79f715bb3bbc023b356c17f7.css" integrity="sha256-tp2bTEgD9jyfQgsPLVT5pMQ01Fp59xW7O7wCOzVsF/c=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.03cb2fbd1c4b1661276d6981ca6b14ab618b2dad33716f8178f34fa30e862ff8.css" integrity="sha256-A8svvRxLFmEnbWmBymsUq2GLLa0zcW&#43;BePNPow6GL/g=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
@@ -439,7 +439,7 @@ window.onload = function checkTocOpenOnLoad() {
   </footer>
 <div>
     <br>
-    <div class="pagination__title">
+    <div class="pagination__title" id="page-footer">
         <span class="pagination__title-h"><i class="fa-regular fa-message"> 评论</i></span>
         
     </div>
@@ -476,8 +476,7 @@ window.onload = function checkTocOpenOnLoad() {
             <path d="M12 6H0l6-6z" />
         </svg>
         
-            <div><span id="read_progress"></span>%</div>
-        </span>
+        <span id="read_progress"></span>
     </span>
 </a>
 
@@ -513,7 +512,7 @@ window.onload = function checkTocOpenOnLoad() {
 <script>
     var mybutton = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
         } else {
@@ -528,7 +527,14 @@ window.onload = function checkTocOpenOnLoad() {
         const clientHeight = document.documentElement.clientHeight;
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         
-        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+        const fotterHeight = scrollHeight - document.getElementById("page-footer").offsetTop;
+        const innerNumber = ((scrollTop / (scrollHeight - clientHeight - fotterHeight)).toFixed(2) * 100).toFixed(0);
+        if (innerNumber <= 100) {
+            readProgress.innerText = innerNumber + '%'
+        } else {
+            readProgress.innerText = '回顶部'
+        }
+        
     })
 
 </script>
