@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a2573335891ff862ad0c8b6c94e9543aacc10471fd4368b4f430fe138c4b3c94.css" integrity="sha256-olczNYkf&#43;GKtDItslOlUOqzBBHH9Q2i09DD&#43;E4xLPJQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2d5b09def2fb621ba993b0561bd210db93548c55e0dfdafa14cce1420d41c2ef.css" integrity="sha256-LVsJ3vL7Yhupk7BWG9IQ25NUjFXg39r6FMzhQg1Bwu8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tszs.info/images/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tszs.info/images/favicon/favicon-32x32.png">
@@ -96,7 +96,7 @@
 </script>
 
 <header class="header">
-<div class="nav-box">
+<div class="nav-box" id="nav-box">
     <nav class="nav">
         <div class="logo" id="logo-top">
             <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
@@ -132,7 +132,6 @@
                         height="35"></a>
             </div>
             <ul id="menu">
-                
                 <li>
                     <a href="https://tszs.info/" title="首页">
                         <span>首页</span>
@@ -159,6 +158,11 @@
                     </a>
                 </li>
             </ul>
+            <div class="read-btn">
+                <a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" id="top-link" accesskey="g">
+                    <div id="read_progress"></div>
+                </a>
+            </div>
         </div>
     </nav>
 </div>
@@ -193,68 +197,34 @@
 </div>
 
 <script>
-    var logoTop = document.getElementById("menu-below");
-    
+    var mybutton = document.getElementById("top-link");
+    const logoTop = document.getElementById("logo-top");
+    const menuUp = document.getElementById("menu-up");
     window.onscroll = function () {
-    logoTop.style.visibility = "hidden";
-    logoTop.style.display = "none";
-    
-    
-    }
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+            logoTop.style.cssText = "visibility:hidden; display:none;";
+            menuUp.style.cssText = "visibility:visible; display:flex;";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+            logoTop.style.cssText = "visibility:visible; display:flex;";
+            menuUp.style.cssText = "visibility:hidden; display:none;";
+        }
         
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+        if (innerNumber>=0 && innerNumber < 100) {
+            readProgress.innerText = '↑' + innerNumber + '%';
+        } else {
+            readProgress.innerText = '回顶部';
+        }
+    };  
 </script>
 
 </header>
@@ -310,16 +280,10 @@
         
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" class="top-link" id="top-link" accesskey="g">
-    
-    <span class="top-inner">
-        <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-            <path d="M12 6H0l6-6z" />
-        </svg>
-        
-        <span id="read_progress"></span>
-    </span>
-</a>
+
+
+
+
 
 <script>
     let menu = document.getElementById('menu')
@@ -350,6 +314,7 @@
     });
 
 </script>
+
 
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
