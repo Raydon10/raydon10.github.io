@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2d5b09def2fb621ba993b0561bd210db93548c55e0dfdafa14cce1420d41c2ef.css" integrity="sha256-LVsJ3vL7Yhupk7BWG9IQ25NUjFXg39r6FMzhQg1Bwu8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0776eb8c6dbb7c70363282404e490cec416ee408e8b2d07df64938bc4c62cde8.css" integrity="sha256-B3brjG27fHA2MoJATkkM7EFu5AjostB99kk4vExizeg=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
@@ -153,7 +153,7 @@
 </script>
 
 <header class="header">
-<div class="nav-box-c" id="nav-box">
+<div class="nav-box" id="nav-box">
     <nav class="nav">
         <div class="logo" id="logo-top">
             <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
@@ -183,12 +183,14 @@
             </div>
         </div>
         <div class="menu-up" id="menu-up">
-            <div class="logo" style="margin-right: 0;">
-                <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
-                    <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
-                        height="35"></a>
-            </div>
             <ul id="menu">
+                <li>
+                    <div class="logo" style="margin:0 -10px 0 0 ;">
+                        <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
+                            <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
+                                height="35"></a>
+                    </div>
+                </li>
                 <li>
                     <a href="https://tszs.info/" title="首页">
                         <span>首页</span>
@@ -258,16 +260,16 @@
     const logoTop = document.getElementById("logo-top");
     const menuUp = document.getElementById("menu-up");
     window.onscroll = function () {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
-            logoTop.style.cssText = "visibility:hidden; display:none;";
-            menuUp.style.cssText = "visibility:visible; display:flex;";
+            logoTop.classList.add("hidden");
+            menuUp.classList.add("show")
         } else {
             mybutton.style.visibility = "hidden";
             mybutton.style.opacity = "0";
-            logoTop.style.cssText = "visibility:visible; display:flex;";
-            menuUp.style.cssText = "visibility:hidden; display:none;";
+            logoTop.classList.remove("hidden");
+            menuUp.classList.remove("show");
         }
         
         const readProgress = document.getElementById("read_progress");
@@ -275,11 +277,11 @@
         const clientHeight = document.documentElement.clientHeight;
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         
-        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
-        if (innerNumber>=0 && innerNumber < 100) {
-            readProgress.innerText = '↑' + innerNumber + '%';
+        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100 ).toFixed(0);
+        if (innerNumber < 10 || innerNumber >=100) {
+            readProgress.innerText = '↑';
         } else {
-            readProgress.innerText = '回顶部';
+            readProgress.innerText = innerNumber;
         }
     };  
 </script>
@@ -289,7 +291,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://tszs.info">首页</a>&nbsp;»&nbsp;<a href="https://tszs.info/p/">文章 📚</a></div>
+    
     <h1 class="post-title">
       小白搭建Hexo博客(语雀端写作)详细教程
     </h1>
@@ -298,12 +300,10 @@
 </div>
   </header> <aside id="toc-container" class="toc-container wide">
     <div class="toc">
-    <br>
         <details>
             <summary accesskey="c" title="(Alt + C)">
                 &nbsp;<span class="details">文章目录</span>
             </summary>
-
             <div class="inner"><ul>
                     <li>
                         <a href="#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2" aria-label="写在前面">写在前面</a></li>
@@ -391,7 +391,7 @@
 window.onload = function checkTocOpenOnLoad() {
     const width = document.body.scrollWidth;
 
-    if (width - main - (toc * 2) - (gap * 4) > 0) {
+    if (width - main - (toc * 2) - (gap * 4) > -80) {
         
         document.querySelector("details").setAttribute("open", "");
     } else {
@@ -437,13 +437,13 @@ window.onload = function checkTocOpenOnLoad() {
          })
      }, false);
 
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--main-width'), 10);
     const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
     const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
     function checkTocPosition() {
         const width = document.body.scrollWidth;
 
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
+        if (width - main - (toc * 2) - (gap * 4) > -80) {
             document.getElementById("toc-container").classList.add("wide");
         } else {
             document.getElementById("toc-container").classList.remove("wide");
@@ -1192,8 +1192,6 @@ webhook地址填上面的触发器访问地址。</p>
     });
 
 </script>
-
-
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {

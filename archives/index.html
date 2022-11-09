@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2d5b09def2fb621ba993b0561bd210db93548c55e0dfdafa14cce1420d41c2ef.css" integrity="sha256-LVsJ3vL7Yhupk7BWG9IQ25NUjFXg39r6FMzhQg1Bwu8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0776eb8c6dbb7c70363282404e490cec416ee408e8b2d07df64938bc4c62cde8.css" integrity="sha256-B3brjG27fHA2MoJATkkM7EFu5AjostB99kk4vExizeg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tszs.info/images/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tszs.info/images/favicon/favicon-32x32.png">
@@ -175,12 +175,14 @@
             </div>
         </div>
         <div class="menu-up" id="menu-up">
-            <div class="logo" style="margin-right: 0;">
-                <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
-                    <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
-                        height="35"></a>
-            </div>
             <ul id="menu">
+                <li>
+                    <div class="logo" style="margin:0 -10px 0 0 ;">
+                        <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
+                            <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
+                                height="35"></a>
+                    </div>
+                </li>
                 <li>
                     <a href="https://tszs.info/" title="首页">
                         <span>首页</span>
@@ -250,16 +252,16 @@
     const logoTop = document.getElementById("logo-top");
     const menuUp = document.getElementById("menu-up");
     window.onscroll = function () {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
-            logoTop.style.cssText = "visibility:hidden; display:none;";
-            menuUp.style.cssText = "visibility:visible; display:flex;";
+            logoTop.classList.add("hidden");
+            menuUp.classList.add("show")
         } else {
             mybutton.style.visibility = "hidden";
             mybutton.style.opacity = "0";
-            logoTop.style.cssText = "visibility:visible; display:flex;";
-            menuUp.style.cssText = "visibility:hidden; display:none;";
+            logoTop.classList.remove("hidden");
+            menuUp.classList.remove("show");
         }
         
         const readProgress = document.getElementById("read_progress");
@@ -267,11 +269,11 @@
         const clientHeight = document.documentElement.clientHeight;
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         
-        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
-        if (innerNumber>=0 && innerNumber < 100) {
-            readProgress.innerText = '↑' + innerNumber + '%';
+        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100 ).toFixed(0);
+        if (innerNumber < 10 || innerNumber >=100) {
+            readProgress.innerText = '↑';
         } else {
-            readProgress.innerText = '回顶部';
+            readProgress.innerText = innerNumber;
         }
     };  
 </script>
@@ -360,8 +362,6 @@
     });
 
 </script>
-
-
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
