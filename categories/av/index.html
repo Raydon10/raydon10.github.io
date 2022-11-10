@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5ebcedda2e8944b2798c0a0f4fff0839fdfbc61cd9272fc3051e3c9194dc762f.css" integrity="sha256-Xrzt2i6JRLJ5jAoPT/8IOf37xhzZJy/DBR48kZTcdi8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e67371d29b080d781c5a2aac2fd8c57bd81548f964cca4565361deb43ddf4607.css" integrity="sha256-5nNx0psIDXgcWiqsL9jFe9gVSPlkzKRWU2HetD3fRgc=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tszs.info/images/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tszs.info/images/favicon/favicon-32x32.png">
@@ -73,11 +73,11 @@
 <meta property="og:title" content="影音娱乐 🎧" />
 <meta property="og:description" content="电影/音乐/书籍分享" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://tszs.info/categories/av/" /><meta property="og:image" content="https://tszs.info/home-info.png"/>
+<meta property="og:url" content="https://tszs.info/categories/av/" />
+<meta property="og:image" content="https://cdn.tszs.info/blog/movie_love.png" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://tszs.info/home-info.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://cdn.tszs.info/blog/movie_love.png" />
 <meta name="twitter:title" content="影音娱乐 🎧"/>
 <meta name="twitter:description" content="电影/音乐/书籍分享"/>
 
@@ -96,9 +96,8 @@
 </script>
 
 <header class="header">
-<div class="nav-box" id="nav-box">
     <nav class="nav">
-        <div class="logo" id="logo-top">
+        <div class="logo">
             <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
                 <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
                     height="35">&nbsp;他山之石</a>
@@ -125,113 +124,37 @@
                 </button>
             </div>
         </div>
-        <div class="menu-up" id="menu-up">
-            <ul id="menu">
-                <li>
-                    <div class="logo" style="margin:0 -10px 0 0 ;">
-                        <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
-                            <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
-                                height="35"></a>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://tszs.info/" title="首页">
-                        <span>首页</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/categories" title="分类">
-                        <span>分类</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/tags" title="标签">
-                        <span>标签</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/archives" title="时间线">
-                        <span>时间线</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/search" title="搜索">
-                        <span>搜索</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="read-btn">
-                <a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" id="top-link" accesskey="g">
-                    <div id="read_progress"></div>
+        <ul id="menu">
+            <li>
+                <a href="https://tszs.info/" title="首页">
+                    <span>首页</span>
                 </a>
-            </div>
-        </div>
+            </li>
+            <li>
+                <a href="https://tszs.info/categories" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tszs.info/tags" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tszs.info/archives" title="时间线">
+                    <span>时间线</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tszs.info/search" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
     </nav>
-</div>
-<div class="menu-below" id="menu-below">
-    <ul class="menu" id="menu">
-        <li>
-            <a href="https://tszs.info/" title="首页">
-                <span>首页</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/categories" title="分类">
-                <span>分类</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/tags" title="标签">
-                <span>标签</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/archives" title="时间线">
-                <span>时间线</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/search" title="搜索">
-                <span>搜索</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
-<script>
-    var mybutton = document.getElementById("top-link");
-    const logoTop = document.getElementById("logo-top");
-    const menuUp = document.getElementById("menu-up");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-            logoTop.classList.add("hidden");
-            menuUp.classList.add("show")
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-            logoTop.classList.remove("hidden");
-            menuUp.classList.remove("show");
-        }
-        
-        const readProgress = document.getElementById("read_progress");
-        const scrollHeight = document.documentElement.scrollHeight;
-        const clientHeight = document.documentElement.clientHeight;
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        
-        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100 ).toFixed(0);
-        if (innerNumber < 10 || innerNumber >=100) {
-            readProgress.innerText = '↑';
-        } else {
-            readProgress.innerText = innerNumber;
-        }
-    };  
-</script>
-
 </header>
 <main class="main"> 
-<header class="page-header">
+<header class="page-header"><div class="breadcrumbs"><a href="https://tszs.info">首页</a>&nbsp;»&nbsp;<a href="https://tszs.info/categories/">分类 🗃️</a></div>
   <h1>
     影音娱乐 🎧
   </h1>
@@ -248,7 +171,7 @@
       </h2>
     </header>
     <div class="entry-content">
-      <p>根据个人观看经历推荐 欢迎评论区补充</p>
+      <p>根据个人观看经历推荐</p>
     </div>
     <footer class="entry-footer"><span title='2022-10-17 00:00:00 +0000 UTC'>2022-10-17</span>&nbsp;·&nbsp;12 分钟&nbsp;·&nbsp;Raydon</footer>
   </div>
@@ -269,10 +192,17 @@
         
     </span>
 </footer>
-
-
-
-
+<a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" class="top-link" id="top-link" accesskey="g">
+    
+    <span class="top-inner">
+        <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+        
+            <div><span id="read_progress"></span>%</div>
+        </span>
+    </span>
+</a>
 
 <script>
     let menu = document.getElementById('menu')
@@ -301,6 +231,28 @@
             }
         });
     });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
 
 </script>
 <script>

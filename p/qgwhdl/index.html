@@ -13,7 +13,7 @@
 
 
 <meta name="referrer" content="no-referrer" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5ebcedda2e8944b2798c0a0f4fff0839fdfbc61cd9272fc3051e3c9194dc762f.css" integrity="sha256-Xrzt2i6JRLJ5jAoPT/8IOf37xhzZJy/DBR48kZTcdi8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e67371d29b080d781c5a2aac2fd8c57bd81548f964cca4565361deb43ddf4607.css" integrity="sha256-5nNx0psIDXgcWiqsL9jFe9gVSPlkzKRWU2HetD3fRgc=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://tszs.info/images/favicon/favicon.ico">
@@ -153,9 +153,8 @@
 </script>
 
 <header class="header">
-<div class="nav-box" id="nav-box">
     <nav class="nav">
-        <div class="logo" id="logo-top">
+        <div class="logo">
             <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
                 <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
                     height="35">&nbsp;他山之石</a>
@@ -182,116 +181,40 @@
                 </button>
             </div>
         </div>
-        <div class="menu-up" id="menu-up">
-            <ul id="menu">
-                <li>
-                    <div class="logo" style="margin:0 -10px 0 0 ;">
-                        <a href="https://tszs.info" accesskey="h" title="他山之石 (Alt + H)">
-                            <img src="https://tszs.info/images/logo.gif" alt="" aria-label="logo"
-                                height="35"></a>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://tszs.info/" title="首页">
-                        <span>首页</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/categories" title="分类">
-                        <span>分类</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/tags" title="标签">
-                        <span>标签</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/archives" title="时间线">
-                        <span>时间线</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://tszs.info/search" title="搜索">
-                        <span>搜索</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="read-btn">
-                <a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" id="top-link" accesskey="g">
-                    <div id="read_progress"></div>
+        <ul id="menu">
+            <li>
+                <a href="https://tszs.info/" title="首页">
+                    <span>首页</span>
                 </a>
-            </div>
-        </div>
+            </li>
+            <li>
+                <a href="https://tszs.info/categories" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tszs.info/tags" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tszs.info/archives" title="时间线">
+                    <span>时间线</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tszs.info/search" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
     </nav>
-</div>
-<div class="menu-below" id="menu-below">
-    <ul class="menu" id="menu">
-        <li>
-            <a href="https://tszs.info/" title="首页">
-                <span>首页</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/categories" title="分类">
-                <span>分类</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/tags" title="标签">
-                <span>标签</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/archives" title="时间线">
-                <span>时间线</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://tszs.info/search" title="搜索">
-                <span>搜索</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
-<script>
-    var mybutton = document.getElementById("top-link");
-    const logoTop = document.getElementById("logo-top");
-    const menuUp = document.getElementById("menu-up");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-            logoTop.classList.add("hidden");
-            menuUp.classList.add("show")
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-            logoTop.classList.remove("hidden");
-            menuUp.classList.remove("show");
-        }
-        
-        const readProgress = document.getElementById("read_progress");
-        const scrollHeight = document.documentElement.scrollHeight;
-        const clientHeight = document.documentElement.clientHeight;
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        
-        const innerNumber = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100 ).toFixed(0);
-        if (innerNumber < 10 || innerNumber >=100) {
-            readProgress.innerText = '↑';
-        } else {
-            readProgress.innerText = innerNumber;
-        }
-    };  
-</script>
-
 </header>
 <main class="main">
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="https://tszs.info">首页</a>&nbsp;»&nbsp;<a href="https://tszs.info/p/">文章 📚</a></div>
     <h1 class="post-title">
       测试语雀文章自动同步是否正常
     </h1>
@@ -307,6 +230,7 @@
             <summary accesskey="c" title="(Alt + C)">
                 &nbsp;<span class="details">文章目录</span>
             </summary>
+
             <div class="inner"><ul>
                     <li>
                         <a href="#h1%e6%a0%87%e9%a2%98" aria-label="H1标题">H1标题</a><ul>
@@ -347,7 +271,7 @@
 window.onload = function checkTocOpenOnLoad() {
     const width = document.body.scrollWidth;
 
-    if (width - main - (toc * 2) - (gap * 4) > -80) {
+    if (width - main - (toc * 2) - (gap * 4) > 0) {
         
         document.querySelector("details").setAttribute("open", "");
     } else {
@@ -393,13 +317,13 @@ window.onload = function checkTocOpenOnLoad() {
          })
      }, false);
 
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--main-width'), 10);
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
     const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
     const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
     function checkTocPosition() {
         const width = document.body.scrollWidth;
 
-        if (width - main - (toc * 2) - (gap * 4) > -80) {
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
             document.getElementById("toc-container").classList.add("wide");
         } else {
             document.getElementById("toc-container").classList.remove("wide");
@@ -515,7 +439,7 @@ window.onload = function checkTocOpenOnLoad() {
   </footer>
 <div>
     <br>
-    <div class="pagination__title" id="page-footer">
+    <div class="pagination__title">
         <span class="pagination__title-h"><i class="fa-regular fa-message"> 评论</i></span>
         
     </div>
@@ -545,10 +469,17 @@ window.onload = function checkTocOpenOnLoad() {
         
     </span>
 </footer>
-
-
-
-
+<a href="#top" aria-label="go to top" title="回到顶部 / Alt + G" class="top-link" id="top-link" accesskey="g">
+    
+    <span class="top-inner">
+        <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+        
+            <div><span id="read_progress"></span>%</div>
+        </span>
+    </span>
+</a>
 
 <script>
     let menu = document.getElementById('menu')
@@ -577,6 +508,28 @@ window.onload = function checkTocOpenOnLoad() {
             }
         });
     });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    
+    document.addEventListener('scroll', function (e) {
+        const readProgress = document.getElementById("read_progress");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        readProgress.innerText = ((scrollTop / (scrollHeight - clientHeight)).toFixed(2) * 100).toFixed(0);
+    })
 
 </script>
 <script>
